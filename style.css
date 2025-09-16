@@ -1,4 +1,148 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/background.png);
+    background-size: cover;
+    height: max-content;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    margin: 0 auto;
+    width: 965px;
+}
+
+.container header h1 {
+    color: #FFF;
+    font-size: 112px;
+    padding-top: 12px;
+}
+
+.container header h3 {
+    font-size: 40px;
+    font-weight: normal;
+    color: #fff54f;
+    font-family: Comic Sans, Comic Sans MS, cursive;
+}
+
+header {
+    text-align: center;
+}
+
+.first-row {
+    display: flex;
+    justify-content: center;
+    border: 25px;
+}
+
+.first-row img{
+    border: 20px solid rgb(212, 186, 71);
+}
+
+.second-row ul {
+    display: flex;
+    flex-direction: row;
+    margin: 42px;
+}
+
+.second-row li {
+    margin: 20px;
+}
+
+.second-row img {
+    border: 7px solid #cccccc;
+}
+
+.description-1 {
+    color: #fff;
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    font-size: 30px;
+    letter-spacing: -1px;
+    font-weight: 600;
+}
+
+.description-2 {
+    margin: 50px;
+    text-align: center;
+    font-size: 40px;
+    width: fit-content;
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    color: #faf13d;
+    letter-spacing: -1px;
+    font-weight: 600;
+}
+
+.buttons {
+    margin: 0 auto;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.first-button {
+    text-align: center;
+    padding: 20px 100px;
+    font-family: sans-serif;
+    font-size: 40px;
+    background-color: #e16d14;
+}
+
+.first-button b:first-child{
+    color: #fff54f;
+    text-decoration: underline;
+    font-style: italic;
+    text-underline-offset: 7px;
+}
+
+.first-button b:last-child {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.second-button {
+    margin: 20px auto;
+    padding: 20px 40px;
+    text-align: center;
+    width: fit-content;
+    font-size: 30px;
+
+    color: #fff;
+    background-color: #b5350f;
+}
+
+.info {
+    width:fit-content;
+    margin: 0 auto;
+}
+.about ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px;
+}
+.about li {
+    margin: 15px;
+    color: #FFF;
+    text-decoration: underline;
+    font-family: Comic Sans, Comic Sans MS, cursive;
+}
+
+.copyright {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+
+
+@media (max-width: 1000px) {
+  .description-1 p {
+    text-align: center;
+  }
 }
