@@ -11,6 +11,13 @@ body {
     height: max-content;
 }
 
+img {
+    max-width: 450px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
 li {
     list-style-type: none;
 }
@@ -81,17 +88,17 @@ header {
 }
 
 .buttons {
-    margin: 0 auto;
-    width: fit-content;
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-.first-button {
-    text-align: center;
+.first-button button {
     padding: 20px 100px;
-    font-family: sans-serif;
     font-size: 40px;
     background-color: #e16d14;
+    cursor: pointer;
+    border: 1ps solid #000;
 }
 
 .first-button b:first-child{
@@ -106,15 +113,14 @@ header {
     font-weight: 800;
 }
 
-.second-button {
-    margin: 20px auto;
-    padding: 20px 40px;
-    text-align: center;
-    width: fit-content;
+.second-button button {
+    margin: 20px;
+    padding: 20px 50px;
     font-size: 30px;
 
     color: #fff;
     background-color: #b5350f;
+    cursor: pointer;
 }
 
 .info {
